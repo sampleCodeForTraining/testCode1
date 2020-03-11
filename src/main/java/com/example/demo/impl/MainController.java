@@ -30,12 +30,12 @@ public class MainController {
             productItems = customService.getProductItems(productId);
         }
 
-        BigDecimal sum = BigDecimal.ZERO;
+        BigDecimal SUM = BigDecimal.ZERO;
         for (int i = 0; i < productItems.size(); i++) {
-            sum = sum.add(productItems.get(i).getPrice());
+            SUM = SUM.add(productItems.get(i).getPrice());
         }
 
-        return ResponseEntity.ok(sum);
+        return ResponseEntity.ok(SUM);
     }
 
     private boolean checkIfIsLegacy(@RequestParam long productId) {
