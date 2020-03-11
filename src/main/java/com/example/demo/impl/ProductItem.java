@@ -6,8 +6,9 @@ public class ProductItem {
     private long productId;
     private BigDecimal price;
 
-    public ProductItem(long productId) {
+    public ProductItem(long productId, BigDecimal price) {
         this.productId = productId;
+        this.price = price;
     }
 
     public long getProductId() {

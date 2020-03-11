@@ -32,7 +32,7 @@ public class MainController {
 
         BigDecimal sum = BigDecimal.ZERO;
         for (int i = 0; i < productItems.size(); i++) {
-            sum.add(productItems.get(i).getPrice());
+            sum = sum.add(productItems.get(i).getPrice());
         }
 
         return ResponseEntity.ok(sum);

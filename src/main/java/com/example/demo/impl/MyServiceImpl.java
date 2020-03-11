@@ -1,6 +1,6 @@
 package com.example.demo.impl;
 
-import java.util.ArrayList;
+import java.math.BigDecimal;
 import java.util.List;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +10,7 @@ public class MyServiceImpl implements MyService {
     @Override
     public List<ProductItem> getProductItems(long productId) {
         // stub
-        return new ArrayList<>();
+        return List.of(new ProductItem(0, BigDecimal.ONE));
     }
 
 }
