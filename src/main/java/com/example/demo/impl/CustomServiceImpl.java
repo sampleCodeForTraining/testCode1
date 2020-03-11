@@ -9,6 +9,7 @@ public class CustomServiceImpl implements MyService {
 
     @Override
     public List<ProductItem> getProductItems(long productId) {
+        // stub
         return new ArrayList<>();
     }
 }
