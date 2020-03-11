@@ -19,7 +19,7 @@ public class MainController {
     private CustomServiceImpl customService;
 
     @GetMapping(path = "totalPrice")
-    public ResponseEntity<BigDecimal> totalPriceProduct(@RequestParam long productId) {
+    public ResponseEntity<BigDecimal> THE_ENDPOINT(@RequestParam long productId) {
         boolean isLegacy = checkIfIsLegacy(productId);
 
         List<ProductItem> productItems = new ArrayList<>();
